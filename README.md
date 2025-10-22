@@ -1,7 +1,7 @@
 # user-login-app
 User Login App
 
-A simple web application that allows users to sign up, log in, and manage their accounts. Built using Flask (Python) and basic HTML/CSS.
+A simple web application that allows users to sign up, log in, and manage their accounts. Built using Flask (Python) and basic HTML.
 
 Features
 
@@ -21,7 +21,7 @@ Python 3.x
 
 Flask
 
-HTML/CSS
+HTML
 
 SQLite (or any database you used)
 
