@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+    <h2>Welcome, {{ user.first_name }} {{ user.last_name }}!</h2>
+    <img src="{{ url_for('static', filename='images/' + user.profile_picture) }}" width="100"><br>
+    <p><strong>Username:</strong> {{ user.username }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Address:</strong> {{ user.address }}</p>
+    <p><strong>User Type:</strong> {{ user.user_type }}</p>
+</body>
+</html>

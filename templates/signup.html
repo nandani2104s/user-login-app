@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><title>Signup</title></head>
+<body>
+    <h2>Signup</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input name="first_name" placeholder="First Name" required><br>
+        <input name="last_name" placeholder="Last Name" required><br>
+        <input type="file" name="profile_picture" required><br>
+        <input name="username" placeholder="Username" required><br>
+        <input name="email" type="email" placeholder="Email" required><br>
+        <input name="password" type="password" placeholder="Password" required><br>
+        <input name="confirm_password" type="password" placeholder="Confirm Password" required><br>
+        <input name="address_line1" placeholder="Address Line 1" required><br>
+        <input name="city" placeholder="City" required><br>
+        <input name="state" placeholder="State" required><br>
+        <input name="pincode" placeholder="Pincode" required><br>
+        <select name="user_type" required>
+            <option value="Patient">Patient</option>
+            <option value="Doctor">Doctor</option>
+        </select><br>
+        <button type="submit">Sign Up</button>
+    </form>
+    <a href="{{ url_for('login') }}">Already have an account? Login</a>
+</body>
+</html>
